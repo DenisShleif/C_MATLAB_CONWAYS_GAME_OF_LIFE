@@ -56,3 +56,8 @@ Rabbits follow the same rules as live cells in the regular game of life. Wolves 
 If two males or two females met they would fight and one would overcome the other based on age, agressive level and slight random chance
 If a male and a female met, they would reproduce making a wolf cub with an average of the characteristics (slight deviation randomly)
 No reprouction or fights would occur if the wolves are directly related to each other (2 generations max)
+
+Skills Used:
+Doubly Linked Lists
+Game Rule Adjustment
+Data Mining
