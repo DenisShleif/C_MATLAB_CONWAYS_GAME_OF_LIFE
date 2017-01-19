@@ -2,7 +2,7 @@
 
 This repository contains all files created for the purpose of simulating Conway's Game of Life.
 
-Rules:
+RULES:
  - Cells are either dead or alive
  - Initially cells are determined to be dead or alive randomly
  - Any live cell with fewer than two live neightbours dies
@@ -10,7 +10,7 @@ Rules:
  - Any live cell with two or three live neighbours lives, unchanged, to the next generation
  - Any dead cell with exactly three live neighbours will come to life
 
-Simple Algorithm:
+SIMPLE ALGORITHM DESCRIPTION:
  - Create an n x m Matrix called original where live cells are 1s and dead cells are worth 0.
  - Loop through t iterations of the following system
    - Create an n x m Matrix called new
@@ -23,7 +23,7 @@ Simple Algorithm:
 
 This algorithm was written in both C and Matlab. The algorithm in C increased run-time by 7800%
 
-Optimized Algorithm:
+OPTIMIZED ALGORITHM DESCRIPTION:
  - Create an n x m Matrix called board where live cells are 1s and dead cells are worth 0.
  - Create a linked list called live_cells where each node contains the x and y coordinates of the live cell and a boolean variable (willLive) determining if the live cell will live to the next round
  -  another linked list called newCells where cells that become alive will be placed
@@ -43,7 +43,7 @@ Optimized Algorithm:
 
 Though in some cases this algorithm requires the program to check through certain cells multiple times, and requires the program to iterate through the live_cells list twice, due to the fact that the size of live_cells drops dramatically in the first 10 iterations, these inefficiencies become more efficient than the short algorithm. This algorithm has been shown to increase the program runtime by 100%
 
-Wolves and Rabbits Rules:
+WOLVES AND RABBITS RULES:
  - 2 Entities exist in this game, wolves and rabbits
  - Rabbits follow the same rules as live cells in the regular game of life
  - Wolves are complex entities that move around the board That have the following characteristics:
@@ -59,7 +59,7 @@ Wolves and Rabbits Rules:
    - No reprouction or fights would occur if the wolves are directly related to each other (2 generations max)
    - If a wolf and a rabbit encounter each other, the wolf eats the rabbit resulting in a health gain
 
-Skills Used:
+MAIN SKILLS USED:
  - Doubly Linked Lists
  - Game Rule Adjustment
  - Data Mining
