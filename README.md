@@ -11,15 +11,15 @@ Rules:
  - Any dead cell with exactly three live neighbours will come to life
 
 Simple Algorithm:
-Create an n x m Matrix called original where live cells are 1s and dead cells are worth 0.
-Loop through t iterations of the following system
-	Create an n x m Matrix called new
-	Loop through every cell in original matrix.
-		Add all the cell values surounding the current cell (do not include the current cell value). Call this value Sum
-		If the cell is dead and the Sum is 3, set the cell to 1 on the new matrix
-		If the cell is alive and the Sum is less than 2, set the cell to 0 on the new matrix
-		If the cell is alive and the Sum is greater than 3, set the cell to 0 on the new matrix
-		If the cell is alive and the Sum is 2 or 3, set the cell to 1 on the new matrix
+ - Create an n x m Matrix called original where live cells are 1s and dead cells are worth 0.
+ - Loop through t iterations of the following system
+   - Create an n x m Matrix called new
+   - Loop through every cell in original matrix.
+     - Add all the cell values surounding the current cell (do not include the current cell value). Call this value Sum
+     - If the cell is dead and the Sum is 3, set the cell to 1 on the new matrix                                               
+     - If the cell is alive and the Sum is less than 2, set the cell to 0 on the new matrix
+     - If the cell is alive and the Sum is greater than 3, set the cell to 0 on the new matrix
+     - If the cell is alive and the Sum is 2 or 3, set the cell to 1 on the new matrix
 
 This algorithm was written in both C and Matlab. The algorithm in C increased run-time by 7800%
 
