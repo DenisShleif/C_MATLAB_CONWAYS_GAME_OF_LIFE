@@ -3,12 +3,12 @@
 This repository contains all files created for the purpose of simulating Conway's Game of Life.
 
 Rules:
- 1 Cells are either dead or alive
- 2 Initially cells are determined to be dead or alive randomly
- 2) Any live cell with fewer than two live neightbours dies
- 3) Any live cell with more than three live neighbours dies
- 4) Any live cell with two or three live neighbours lives, unchanged, to the next generation
- 5) Any dead cell with exactly three live neighbours will come to life
+ - Cells are either dead or alive
+ - Initially cells are determined to be dead or alive randomly
+ - Any live cell with fewer than two live neightbours dies
+ - Any live cell with more than three live neighbours dies
+ - Any live cell with two or three live neighbours lives, unchanged, to the next generation
+ - Any dead cell with exactly three live neighbours will come to life
 
 Simple Algorithm:
 Create an n x m Matrix called original where live cells are 1s and dead cells are worth 0.
