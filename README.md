@@ -44,7 +44,7 @@ Optimized Algorithm:
 Though in some cases this algorithm requires the program to check through certain cells multiple times, and requires the program to iterate through the live_cells list twice, due to the fact that the size of live_cells drops dramatically in the first 10 iterations, these inefficiencies become more efficient than the short algorithm. This algorithm has been shown to increase the program runtime by 100%
 
 Wolves and Rabbits Rules:
-2 Entities exist in this game, wolves and rabbits:
+ - 2 Entities exist in this game, wolves and rabbits:
  - Rabbits follow the same rules as live cells in the regular game of life
  - Wolves are complex entities that move around the board That have the following characteristics:
    - Gender
