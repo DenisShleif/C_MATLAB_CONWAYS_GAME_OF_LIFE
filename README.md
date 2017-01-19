@@ -44,20 +44,22 @@ Optimized Algorithm:
 Though in some cases this algorithm requires the program to check through certain cells multiple times, and requires the program to iterate through the live_cells list twice, due to the fact that the size of live_cells drops dramatically in the first 10 iterations, these inefficiencies become more efficient than the short algorithm. This algorithm has been shown to increase the program runtime by 100%
 
 Wolves and Rabbits Rules:
-2 Entities exist in this game, wolves and rabbits.
-Rabbits follow the same rules as live cells in the regular game of life. Wolves are complex entities that move around the board That have the following characteristics:
- - Gender
- - Age
- - Agression Level
- - Reproductive Rate
- - Mother and Father
- - Health
-
-If two males or two females met they would fight and one would overcome the other based on age, agressive level and slight random chance
-If a male and a female met, they would reproduce making a wolf cub with an average of the characteristics (slight deviation randomly)
-No reprouction or fights would occur if the wolves are directly related to each other (2 generations max)
+2 Entities exist in this game, wolves and rabbits:
+ - Rabbits follow the same rules as live cells in the regular game of life
+ - Wolves are complex entities that move around the board That have the following characteristics:
+   - Gender
+   - Age
+   - Agression Level
+   - Reproductive Rate
+   - Mother and Father
+   - Health
+ - Wolves follow the following basic rules when they encounter other animals:
+   - If two males or two females met they would fight and one would overcome the other based on age, agressive level and slight random chance
+   - If a male and a female met, they would reproduce making a wolf cub with an average of the characteristics (slight deviation randomly)
+   - No reprouction or fights would occur if the wolves are directly related to each other (2 generations max)
+   - If a wolf and a rabbit encounter each other, the wolf eats the rabbit resulting in a health gain
 
 Skills Used:
-Doubly Linked Lists
-Game Rule Adjustment
-Data Mining
+ - Doubly Linked Lists
+ - Game Rule Adjustment
+ - Data Mining
